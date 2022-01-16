@@ -1,11 +1,19 @@
-## EliF Cloud 버전
 
-### 설치
+### Install 
 ```
 yarn install
 ```
 
-### 실행
+### Test
 ```
-yarn start
+yarn start 
+
+In browser, 
+https://localhost:8004/?isDvlp=y
+
+```
+
+### Build
+```
+yarn build 
 ```
