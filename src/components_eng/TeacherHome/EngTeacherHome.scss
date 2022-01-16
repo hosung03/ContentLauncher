@@ -1,0 +1,111 @@
+#wrap, .wrapcont {width: 1280px;height: 800px;position: relative;background: url("../../../static/images/bg_class.jpg") no-repeat 0 0;overflow: hidden;}
+
+//.classinfo_logo { display: block; width: 110px; height: 26px; background: url("../../../static/images/img_logo_sub.png"); background-position: center; } #asis
+.classwrap .classinfo {padding: 0 90px;}
+.classwrap .classinfo dt {position: relative;font-size: 24px;border-bottom: 2px solid #0078da;color: #fff;font-weight: normal;overflow: hidden;height: 90px;display: flex;flex-direction: column;justify-content: center;}
+.classwrap .classinfo dt .cname, .classwrap .classinfo dt .tname {display: block;float: left;font-weight: normal; user-select: none; }
+.classwrap .classinfo dt .cname {padding-right: 14px;position: relative;margin-right: 14px; }
+/*
+.classwrap .classinfo dt .syncbtn {width: 35px;height: 35px;background: url("../../../static/images/sync_enable.png") no-repeat 50% 50%;background-size: 35px auto;position: absolute; margin-left: 5px;border: none}
+.classwrap .classinfo dt .syncbtn:hover {transform:scale(1.1)}
+.classwrap .classinfo dt .syncbtn:disabled {background: url("../../../static/images/sync_disable.png") no-repeat 50% 50%}
+.classwrap .classinfo dt .syncbtn:disabled:hover {transform:scale(1.0)}
+*/
+
+.classwrap .classinfo dt .cname:after {content: '';display: block;width: 2px;background-color: #fff;right: 0;top: 50%;height: 20px;position: absolute;transform: translateY(-50%);}
+.classwrap .classinfo dt .btn_start {display: block; width: 127px; height: 40px; background: url("../../../static/images/btn_start.png") no-repeat; float: left; margin-left: 30px; cursor: pointer;}
+
+.classwrap .classinfo dt span.setting {width: 46px;height: 46px;right: 8px;top: 8px;background: url("../../../static/images/ic_setting.png") no-repeat 50% 50%;border-radius: 50%;background-size: 30px auto; display: block; margin-left: 10px; float: left; cursor: pointer;}
+.classwrap .classinfo dt span.setting:hover {background-size: 34px auto;}
+.classwrap .classinfo dt span.setting.select, .classwrap .classlist li .cFunc span.setting:active {background-size: 34px auto;background-color: #00baff;}
+
+.classwrap .classinfo dt img {display: block; user-select: none;}
+.classwrap .classinfo dt .date {position: absolute;top: 40px;right: 0;font-family: 'NanumSqL',sans-serif;font-size: 24px;font-weight: bold; user-select: none; }
+.classwrap .classinfo dd.choice {margin-top: 20px;position: relative;color: #fff;font-size: 24px;height: 50px;}
+.classwrap .classinfo dd.choice strong {font-weight: normal;display: block; user-select: none;}
+.classwrap .classinfo dd.choice p {position: absolute;top: 0;right: 0;color: #00baff;font-family: 'NotoKrB', sans-serif;font-size: 16px; user-select: none;}
+.classwrap .classinfo dd.choice p span {color: #fff;display: inline-block;vertical-align: middle;border: 2px solid #6b89a8;width: 100px;height: 42px;text-align: center;line-height: 42px;border-radius: 21px 21px 21px 0;margin: 0 0 5px 10px;}
+.classwrap .classinfo dd.unit {margin-top: 20px;position: relative; user-select: none;height: 50px;}
+.classwrap .classinfo dd.unit .student {display: inline-block;height: 32px;padding: 5px 4px 5px 47px;background: url("../../../static/images/ic_class.png") no-repeat -225px -114px #1cc9af;border-radius: 21px 21px 21px 0;line-height: 32px;color: #fff;font-size: 16px;font-weight: normal;cursor: pointer;}
+.classwrap .classinfo dd.unit .student:hover {transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transition-duration: .3s;}
+.classwrap .classinfo dd.unit .student span {display: inline-block;margin-left: 10px;height: 28px;line-height: 28px;border: 2px solid #fff;border-radius: 16px;padding-right: 15px;overflow: hidden;vertical-align: middle;margin-top: -3px;color: #117263;font-weight: bold;}
+.classwrap .classinfo dd.unit .student span b {display: inline-block;background-color: #77dfcf;padding: 0 15px;margin-right: 10px;}
+.classwrap .classinfo dd.unit .unit_info {position: absolute;right: 0;top: 0;cursor: pointer;}
+.classwrap .classinfo dd.unit .unit_info p {float: left;border-radius: 21px 21px 21px 0;line-height: 42px;font-family: 'NotoKrB', sans-serif;font-size: 16px;color: #fff;padding: 0 16px 0 42px;margin-left: 10px;}
+.classwrap .classinfo dd.unit .unit_info p.activity {background: url("../../../static/images/ic_class.png") no-repeat -228px -162px #00baff;z-index: 1;}
+.classwrap .classinfo dd.unit .unit_info p.activity:hover {transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transition-duration: .3s;z-index: 2;}
+.classwrap .classinfo dd.unit .unit_info p.activity.select, .classwrap .classinfo dd.unit .unit_info p.activity:active {transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);background-color: #0064a7;z-index: 2;}
+.classwrap .classinfo dd.unit .unit_info p.book {background: url("../../../static/images/ic_class.png") no-repeat -224px -229px #9445ff;position: relative;z-index: 1;}
+.classwrap .classinfo dd.unit .unit_info p.book em {display: block;width: 24px;height: 24px;text-indent: -999em;background: url("../../../static/images/ic_class.png") no-repeat -324px -74px;position: absolute;top: -5px;right: -5px;}
+.classwrap .classinfo dd.unit .unit_info p.book:hover {transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transition-duration: .3s;z-index: 2;}
+.classwrap .classinfo dd.unit .unit_info p.book.select, .classwrap .classinfo dd.unit .unit_info p.book:active {transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);background-color: #2c41a7;z-index: 2;}
+.classwrap .classlist_cnt {margin: 45px 100px 0 90px;position: relative;min-height: 40px;color: #fff;font-family: 'NotoKrB', sans-serif;font-size: 28px;}
+.classwrap .classlist_cnt em {display: inline-block;height: 32px;border-radius: 16px 16px 16px 0;background-color: #14eccc;padding: 0 10px;vertical-align: middle;font-size: 20px;color: #004660;}
+.classwrap .classlist_cnt .page {position: absolute;right: 0;top: 8px;color: #fff;font-size: 18px; user-select: none;}
+.classwrap .classlist {padding: 0 78px;position: relative;margin-bottom: 20px;}
+.classwrap .classlist .classlistout {position: relative;height: 440px;overflow: hidden;}
+.classwrap .classlist .classlistout ul {padding: 20px 0 20px 12px;}
+.classwrap .classlist li {float: left;margin-right: 12px;position: relative;cursor: pointer;}
+.classwrap .classlist li:hover, .classwrap .classlist li.select, .classwrap .classlist li:hover, .classwrap .classlist li:active {z-index: 9;transform:scale(1.1);-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-o-transform:scale(1.1);transition-duration: .3s;}
+.classwrap .classlist li .cCnt {width: 266px;height: 248px;border-top-left-radius: 17px;border-top-right-radius: 17px;position: relative;overflow: hidden;display: flex;flex-direction: column;justify-content: center;text-align: center;}
+.classwrap .classlist li .cCnt img {position: absolute;top: 0;left: 0;width: 100%;}
+.classwrap .classlist li .cCnt p {color: #fff;font-family: 'NotoKrM', sans-serif;font-size: 25px;padding-top: 20px;z-index: 3;}
+.classwrap .classlist li .cCnt b {display: block;font-size: 68px;font-family: 'NotoKrR', sans-serif;font-weight: normal;margin-top: -20px;}
+.classwrap .classlist li.disabled .cCnt img {filter: grayscale(100%);}
+.classwrap .classlist li.disabled .cCnt:after {content: '';display: block;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.4);position: absolute;top: 0;left: 0;}
+.classwrap .classlist li .cInfo {width: 266px;border-bottom-right-radius: 17px;background-color: #fff;height: 152px;box-sizing: border-box;padding: 6px 18px 20px 14px;color: #00bbbe;font-size: 18px;position: relative;}
+
+/* English/Korean UI Difference Point Start */
+.classwrap .classlist li .cInfo strong {display: block;font-size: 22px;color: #003739;font-family: 'NotoKrM', sans-serif; word-break: keep-all;}
+/* English/Korean UI Difference Point End */
+
+.classwrap .classlist li .cInfo p {margin-top: 10px;}
+.classwrap .classlist li .cInfo p span {display: inline-block;text-indent: -999em;background: url("../../../static/images/ic_class.png") no-repeat 0 -71px;width: 32px;height: 28px;}
+.classwrap .classlist li .cInfo p span.ic_s {background-position: -75px -71px;}
+.classwrap .classlist li.disabled .cInfo p span.ic_t {background-position: -153px -71px;}
+.classwrap .classlist li.disabled .cInfo p span.ic_s {background-position: -234px -71px;}
+.classwrap .classlist li.disabled .cInfo, .classwrap .classlist li.disabled .cInfo strong {color: #909090;}
+.classwrap .classlist li .cFunc span {display: block;position: absolute;text-indent: -9999em;cursor: pointer;}
+/*
+.classwrap .classlist li .cFunc span.down {width: 34px;height: 34px;left: 14px;top: 14px;background: url("../../../static/images/ic_down.png") no-repeat 50% 50% #1cc9af;border-radius: 50%;background-size: 18px auto;}
+.classwrap .classlist li .cFunc span.down:hover {width: 38px;height: 38px;left: 12px;top: 12px;background-size: 20px auto;}
+.classwrap .classlist li .cFunc span.down.select, .classwrap .classlist li .cFunc span.down:active {width: 38px;height: 38px;left: 12px;top: 12px;background-size: 20px auto;background-color: #08698f;}
+
+.classwrap .classlist li .cFunc span.down.disabled {width: 34px;height: 34px;left: 14px;top: 14px;background: url("../../../static/images/ic_down.png") no-repeat 50% 50% #ccd7d7;border-radius: 50%;background-size: 18px auto;}
+.classwrap .classlist li .cFunc span.down.disabled:hover {width: 38px;height: 38px;left: 12px;top: 12px;background-size: 20px auto;}
+.classwrap .classlist li .cFunc span.down.disabled.select, .classwrap .classlist li .cFunc span.down.disabled:active {width: 38px;height: 38px;left: 12px;top: 12px;background-size: 20px auto;background-color: #959e9e;}
+
+.classwrap .classlist li .cFunc span.pad {left: 54px;top: 12px;background: url("../../../static/images/btn_pad2.png") no-repeat 50% 50%;width: 38px;height: 38px;}
+.classwrap .classlist li .cFunc span.pad:hover {background-image: url("../../../static/images/btn_pad2_foc.png");}
+.classwrap .classlist li .cFunc span.pad.select, .classwrap .classlist li .cFunc span.pad:active {background-image: url("../../../static/images/btn_pad2_sel.png");}
+.classwrap .classlist li .cFunc span.pad.disabled {background-image: url("../../../static/images/btn_pad2_dis.png");}
+*/
+.classwrap .classlist li .cFunc span.setting {width: 46px;height: 46px;right: 8px;top: 8px;background: url("../../../static/images/ic_setting.png") no-repeat 50% 50%;border-radius: 50%;background-size: 30px auto;}
+.classwrap .classlist li .cFunc span.setting:hover {background-size: 34px auto;}
+.classwrap .classlist li .cFunc span.setting.select, .classwrap .classlist li .cFunc span.setting:active {background-size: 34px auto;background-color: #00baff;}
+.classwrap .classlist li .cFunc span.info {width: 38px;height: 36px;background: url("../../../static/images/ic_info.png") no-repeat 50% 50%;right: 12px;top: 200px;background-size: 32px auto;}
+.classwrap .classlist li .cFunc span.info:hover {background-size: 100% auto;}
+.classwrap .classlist li .cFunc span.info select, .classwrap .classlist li .cFunc span.info:active {background-image: url("../../../static/images/ic_info.png");opacity: 0.4;background-size: 100% auto;}
+.classwrap .classlist li .cFunc span.reload {width: 46px;height: 46px;background: url("../../../static/images/ic_reload.png") no-repeat -92px 0;right: 8px;bottom: 8px;}
+.classwrap .classlist li .cFunc span.reload:hover {background-position: -46px 0;}
+.classwrap .classlist li .cFunc span.reload.select, .classwrap .classlist li .cFunc span.reload:active {background-position: 0 0;}
+.classwrap .classlist li .cComplete {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 100px;height: 100px;border-radius: 50px;z-index: 10;color: #fff;text-align: center;display: flex;flex-direction: column;justify-content: center;background: url("../../../static/images/ic_class.png") no-repeat -104px -131px #9445ff;}
+.classwrap .classlist li .cComplete b {display:block;padding-top: 17px;font-weight: normal;}
+.classwrap .classlist li.disabled .cFunc span.reload, .classwrap .classlist li.disabled .cFunc span.reload:hover {background-position: -138px 0;}
+.classwrap .classlist li .step {width: 100%;position: absolute;right: 0;bottom: 19px;}
+.classwrap .classlist li .step p {text-align: right;font-size: 16px;padding-right: 14px;margin-bottom: 9px;}
+.classwrap .classlist li .step .step_bar_all {margin: 0 14px;height: 10px;overflow: hidden;position: relative;}
+.classwrap .classlist li .step .step_bar_all {background-color: #dcdcdc;border-radius: 5px;}
+.classwrap .classlist li .step .step_bar_all span {position:absolute;top:0;left:0;height: 10px;background-color: #9445ff;}
+.classwrap .classlist li .step .step_bar {margin: 0 10px 0 14px;height: 10px;overflow: hidden;position: relative;}
+.classwrap .classlist li .step .step_bar span {float: left;margin-right: 4px;background-color: #dcdcdc;height: 10px;}
+.classwrap .classlist li .step .step_bar span.on {background-color: #9445ff;}
+.classwrap .classlist li .step .step_bar.spt2 span:nth-child(1), .classwrap .classlist li .step .step_bar.spt3 span:nth-child(1), .classwrap .classlist li .step .step_bar.spt4 span:nth-child(1), .classwrap .classlist li .step .step_bar.spt6 span:nth-child(1), .classwrap .classlist li .step .step_bar.spt6 span:nth-child(1) {border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+.classwrap .classlist li .step .step_bar.spt2 span {width: calc(100%/2 - 4px);} .classwrap .classlist li .step .step_bar.spt2 span:nth-child(2) {border-top-right-radius: 5px;}
+.classwrap .classlist li .step .step_bar.spt3 span {width: calc(100%/3 - 4px);} .classwrap .classlist li .step .step_bar.spt3 span:nth-child(3) {border-top-right-radius: 5px;}
+.classwrap .classlist li .step .step_bar.spt4 span {width: calc(100%/4 - 4px);} .classwrap .classlist li .step .step_bar.spt4 span:nth-child(4) {border-top-right-radius: 5px;}
+.classwrap .classlist li .step .step_bar.spt5 span {width: calc(100%/5 - 4px);} .classwrap .classlist li .step .step_bar.spt5 span:nth-child(5) {border-top-right-radius: 5px;}
+.classwrap .classlist li .step .step_bar.spt6 span {width: calc(100%/6 - 4px);} .classwrap .classlist li .step .step_bar.spt6 span:nth-child(6) {border-top-right-radius: 5px;}
+.classwrap .classlist .swiper-button-next, .classwrap .classlist .swiper-button-prev {display: block;width: 16px;height: 28px;cursor: pointer;background: url("../../../static/images/ic_class.png") no-repeat 0 -167px;text-indent: -999em;position: absolute;right: 37px;left: initial;margin: 0;}
+.classwrap .classlist .swiper-button-prev {top: 87px;}
+.classwrap .classlist .swiper-button-next {top: 286px;background-position: -60px -167px;}

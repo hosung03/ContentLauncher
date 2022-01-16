@@ -1,0 +1,58 @@
+{
+  /*
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "experimentalDecorators": true,
+  }
+  */
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es2015", "dom"],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+		"declaration": false,
+
+    "strict": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "noStrictGenericChecks": false,  
+    "noUnusedParameters": false,  
+		"experimentalDecorators": true,
+		"preserveConstEnums": true,
+    "charset": "utf8", 
+
+    "typeRoots": [
+			"node_modules/@types",
+			"types"
+    ],
+    "paths": {
+			"@content/*": ["output/resources/app/public/content/*"]
+		}
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+	]
+}

@@ -1,0 +1,9 @@
+/* Class */
+.Hbtn {display: block;position: absolute;background: url("../../../static/images/ic_menu2.png") no-repeat 0 0;text-indent: -999em;cursor: pointer;left: 30px;top: 39px;width: 30px;height: 20px;}
+.Hbtn:hover {background-size: 30px auto;}
+.HMenu {position: absolute;top: 17px;left: 10px;background-color: #1ac1ff;width: 257px;z-index: 20;border-radius: 0 20px 20px 20px;overflow: hidden;display: none;height: 332px;}
+.HMenu > div {position: relative;padding-top: 71px;background: url("../../../static/images/ic_menu2.png") no-repeat 20px 20px;}
+.HMenu > div .close {position: absolute;display: block;background: url("../../../static/images/ic_close.png") no-repeat 0 0;width: 22px;height: 22px;top: 20px;right: 20px;cursor: pointer;}
+.HMenu li {height: 70px;font-family: 'NotoKrB', sans-serif;font-size: 20px;color: #fff;text-align: center;display: flex;flex-direction: column;justify-content: center;cursor: pointer;letter-spacing: -0.02em;}
+.HMenu li:hover {color: #000;background-color: #fff;}
+.HMenu li.select, .HMenu li:active {font-size: 22px;color: #000;background-color: #fff;}

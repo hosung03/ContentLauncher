@@ -1,0 +1,138 @@
+{
+	"result": 0,
+	"curriculum": [{
+		"thumbnail": "https://attach.fel40.com/upload/2019/10/14/FILE201910140251483711.jpg",
+		"depth": 2,
+		"name": "Level 1",
+		"dept_name": "Level 1",
+		"id": 10114,
+		"info": "Level 1",
+		"childrenList": [{
+			"thumbnail": "https://attach.fel40.com/upload/2020/03/09/FILE202003091008066171.jpg",
+			"depth": 3,
+			"name": "Unit 1",
+			"dept_name": "Dream Jobs",
+			"id": 10223,
+			"info": "Social Studies",
+			"activityyn": "N",
+			"childrenList": [{
+				"thumbnail": "",
+				"depth": 4,
+				"name": "Lesson 1",
+				"dept_name": "Nonfiction 1",
+				"id": 11747,
+				"info": "L&S",
+				"activityyn": "N",
+				"childrenList": [{
+					"thumbnail": "",
+					"depth": 5,
+					"book": {
+						"path": "/content/1788",
+						"id": 12583,
+						"viewMode": 2,
+						"key": 1499
+					},
+					"name": "Word",
+					"dept_name": "Word",
+					"id": 11754,
+					"info": "Nonfiction 1",
+					"activityyn": "N"
+				}, {
+					"thumbnail": "",
+					"depth": 5,
+					"book": {
+						"path": "/content/1789",
+						"id": 12584,
+						"viewMode": 2,
+						"key": 1500
+					},
+					"name": "Listening Comprehension",
+					"dept_name": "Listening Comprehension",
+					"id": 11755,
+					"info": "Nonfiction 1",
+					"activityyn": "N"
+				}]
+			}]
+		}, {
+			"thumbnail": "https://attach.fel40.com/upload/2020/03/09/FILE202003091008170111.jpg",
+			"depth": 3,
+			"code": "000100010002",
+			"name": "Unit 2",
+			"dept_name": "All About Money",
+			"id": 10224,
+			"info": "Social Studies",
+			"activityyn": "N",
+			"childrenList": [{
+				"thumbnail": "",
+				"depth": 4,
+				"code": "0001000100020001",
+				"name": "Lesson 1",
+				"dept_name": "Nonfiction 1",
+				"id": 10226,
+				"info": "L&S",
+				"activityyn": "N",
+				"childrenList": [{
+					"thumbnail": "",
+					"depth": 5,
+					"code": "00010001000200010001",
+					"book": {
+						"path": "/content/1788",
+						"id": 12155,
+						"viewMode": 2,
+						"key": 648
+					},
+					"name": "Word",
+					"dept_name": "Word",
+					"id": 10238,
+					"info": "Nonfiction 1",
+					"activityyn": "N"
+				}, {
+					"thumbnail": "",
+					"depth": 5,
+					"code": "00010001000200010002",
+					"book": {
+						"path": "/content/1789",
+						"id": 12156,
+						"viewMode": 2,
+						"key": 649
+					},
+					"name": "Listening Comprehension",
+					"dept_name": "Listening Comprehension",
+					"id": 10239,
+					"info": "Nonfiction 1",
+					"activityyn": "N"
+				}]
+			}, {
+				"thumbnail": "",
+				"depth": 4,
+				"code": "0001000100020007",
+				"name": "Lesson 7",
+				"dept_name": "Storytelling",
+				"id": 11340,
+				"info": "Storytelling",
+				"activityyn": "N",
+				"childrenList": [{
+					"thumbnail": "",
+					"depth": 5,
+					"code": "00010001000200070001",
+					"book": {
+						"path": "/content/1807",
+						"size": 566,
+						"kind": "I",
+						"id": 12347,
+						"viewMode": 2,
+						"updatetime": "2019-10-02 10:47:09",
+						"version": 1,
+						"key": 677
+					},
+					"name": "Storytelling",
+					"dept_name": "Storytelling",
+					"id": 11342,
+					"info": "Storytelling",
+					"activityyn": "N"
+				}]
+			}]
+		}]
+	}],
+	"resultType": "Success"
+}

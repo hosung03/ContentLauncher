@@ -1,0 +1,13 @@
+Thumbs.db
+.DS_Store
+node_modules
+
+tempOutDir
+temp
+.awcache
+
+dist
+
+# vscode setting
+/.vscode/*
+

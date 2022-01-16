@@ -1,0 +1,72 @@
+.lessonwrap {padding: 0 90px;margin-top: 20px;position: relative;}
+.lessonwrap .lesson_menu {background: rgba(0, 64, 130, 0.9) url("../../../static/images/ic_menu.png") no-repeat 50% 50%;width: 60px;height: 60px;position: absolute;top: 0;left: 14px;cursor: pointer;}
+.lessonwrap .lesson_menu.disabled {opacity: .5;} .lessonwrap .lesson_menu.select, .lessonwrap .lesson_menu:active {background-color: #00599a;background-size: 32px auto;}
+.lessonwrap .lesson_menu:hover {background-size: 32px auto;}
+.lessonwrap .lessonunit .lesson_title {background-color: rgba(0, 64, 130, 0.9);height: 60px;display: flex;flex-direction: column;justify-content: center;text-align: center;}
+.lessonwrap .lessonunit .lesson_title em {display: inline-block;height: 28px;color: #fff;font-size: 16px;vertical-align: middle;padding: 0 12px;border: 2px solid #668cb4;border-radius: 16px 16px 16px 0;line-height: 28px;margin: -10px 10px 0 0;}
+.lessonwrap .lessonunit .lesson_title b {display: inline-block;color: #fff;font-family: 'NotoKrB', sans-serif;font-size: 28px;}
+.lessonwrap .lessonunit .lesson_info {background-color: #fff;border-radius: 20px 20px 20px 0;margin-top: 20px;overflow: hidden;}
+.lessonwrap .lessonunit .lesson_info .step {width: 709px;float: right;padding: 0 34px 83px;position: relative;overflow: hidden;}
+.lessonwrap .lessonunit .lesson_info .step_title {height: 60px;display: flex;flex-direction: column;justify-content: center;position: relative;border-bottom: 2px solid #194b4c;font-size: 24px;margin-bottom: 17px;}
+
+/* English/Korean UI Difference Point Start */
+.lessonwrap .lessonunit .lesson_info .step_title p b {display: inline-block;font-family: 'NotoKrB', sans-serif;letter-spacing: -0.03em;position: relative;padding-left: 15px;}
+.lessonwrap .lessonunit .lesson_info .step_title p b:after {content: '';display: block;width: 2px;height: 16px;left: 0;top: 50%;background-color: #668788;position: absolute;margin-top: -6px;margin-left: 5px;}
+
+.lessonwrap .lessonunit .lesson_info .step_title p b.textbook {display: inline-block;font-family: 'NotoKrB', sans-serif;letter-spacing: -0.03em;position: relative;padding-left: 15px;}
+.lessonwrap .lessonunit .lesson_info .step_title p b.textbook:after {display: none;}
+/* English/Korean UI Difference Point End */
+
+.lessonwrap .lessonunit .lesson_info .step_title .date {display: inline-block;font-family: 'NotoKrB', sans-serif;font-size: 14px;color: #a8a9a9;margin-left: 15px;}
+.lessonwrap .lessonunit .lesson_info .step_title .page {position: absolute;right: 0;top: 50%;transform: translateY(-50%);font-size: 18px;}
+.lessonwrap .lessonunit .lesson_info .step_list {height: 330px;overflow: hidden;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide {height: 66px;display: table;width: 100%;}  // 72px
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div {display: table-cell;vertical-align: middle;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.idx {width: 60px;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.idx em {width: 38px;height: 38px;display: flex;flex-direction: column;justify-content: center;text-align: center;font-size: 20px;border-radius: 21px 21px 21px 0;color: #9445ff;border: 2px solid #d4b5ff;position: relative;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.idx em.select, .lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.idx em:active {border-color: #fff;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.idx em.select:after, .lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.idx em:active:after {content:'';width: 42px;height: 42px;position: absolute;background: url("../../../static/images/test.png") no-repeat 0 0;left: -2px;top: -2px;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.name {width: 453px;font-family: 'NotoKrB', sans-serif;font-size: 28px;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.name span {display: block;font-size: 14px;color: #a8a9a9;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.btn {text-align: right;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.btn button {border: none;width: 88px;height: 42px;font-family: 'NotoKrB', sans-serif;font-size: 16px;color: #fff;border-radius: 21px 21px 21px 0;margin-left: 12px;background-color: #1cc9af;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.btn button.s {background-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .step_list .swiper-slide div.btn button:first-child {margin-left: 0;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-prev, .lessonwrap .lessonunit .lesson_info .step .swiper-button-next {bottom: 0;top: inherit;margin: 0;height: 70px;right: inherit;left: 0;box-sizing: border-box;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-prev {background-image: url("../../../static/images/bg_prev_nor.png");background-size: 28px auto;width: 390px;border-top: 2px solid #ccd7d7;border-right: 2px solid #ccd7d7;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-prev.select, .lessonwrap .lessonunit .lesson_info .step .swiper-button-prev:active {background: url("../../../static/images/bg_prev_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-prev.swiper-button-disabled {background-image: url("../../../static/images/bg_prev_dis.png");}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-next {background-image: url("../../../static/images/bg_next_nor.png");background-size: 28px auto;left: 388px;width: 390px;border-top: 2px solid #ccd7d7;border-left: 2px solid #ccd7d7;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-next.select, .lessonwrap .lessonunit .lesson_info .step .swiper-button-next:active {background: url("../../../static/images/bg_next_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-prev:hover, .lessonwrap .lessonunit .lesson_info .step .swiper-button-next:hover {background-size: 34px auto;border-color: #043a3c;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-next.swiper-button-disabled {background-image: url("../../../static/images/bg_next_dis.png");}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-disabled {opacity: 1 !important;border-color: #f0f3f3;z-index: 9;background-color: #fff;}
+.lessonwrap .lessonunit .lesson_info .lesson {width: 322px;float: left;position: relative;padding-bottom: 132px;background-color: #dedede;}
+.lessonwrap .lessonunit .lesson_info .lesson .lesson_page {height: 60px;display: flex;flex-direction: column;justify-content: center;text-align: right;border-bottom: 2px solid #194b4c;font-size: 18px;margin: 0 34px 0px;}
+.lessonwrap .lessonunit .lesson_info .lesson_list {height: 298px;overflow: hidden;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide {height: 72px;padding: 0 34px;position: relative;box-sizing: border-box; cursor: pointer;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide.select, .lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide:active {background-color: #fff;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide .line {border-bottom: 2px solid #c2c9c9;height: 70px;padding: 0 10px;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide.select .line, .lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide:active .line {border-color: #fff;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide .line > span {display: block;font-size: 12px;color: #a8a9a9;text-align: right;padding-top: 3px; padding-bottom: 3px;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide .line p em  {display: inline-block;height: 20px;font-size: 16px;vertical-align: middle;padding: 0 8px;border: 2px solid #999;border-radius: 12px 12px 12px 0;line-height: 20px;margin: -2px 10px 0 0;letter-spacing: -1px;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide .line p {font-size: 20px;font-weight: bold;letter-spacing: -0.02em;margin-top: -10px;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide.select *, .lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide:active * {font-family: 'NotoKrB', sans-serif;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide .line .progress-bar {margin-top: 12px;height: 9px;overflow: hidden;position: relative;background-color: #c7c7c7;border-radius: 4px 0 4px 4px;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide.select .line .progress-bar, .lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide:active .line .progress-bar {background-color: #e5e5e5;}
+.lessonwrap .lessonunit .lesson_info .lesson_list .swiper-slide .line .progress-bar span {position:absolute;top:0;left:0;height: 10px;background-color: #9962ff;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-prev, .lessonwrap .lessonunit .lesson_info .lesson .swiper-button-next {bottom: 0;top: inherit;margin: 0;height: 70px;right: inherit;left: 0;box-sizing: border-box;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-prev {background-image: url("../../../static/images/bg_prev_nor.png");background-size: 28px auto;width: 162px;border: 2px solid #bfbfbf;border-bottom: none;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-prev.select, .lessonwrap .lessonunit .lesson_info .lesson .swiper-button-prev:active {background: url("../../../static/images/bg_prev_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-next {background-image: url("../../../static/images/bg_next_nor.png");background-size: 28px auto;left: 160px;width: 163px;border-top: 2px solid #bfbfbf;border-left: 2px solid #bfbfbf;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-next.select, .lessonwrap .lessonunit .lesson_info .lesson .swiper-button-next:active {background: url("../../../static/images/bg_next_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-prev:hover, .lessonwrap .lessonunit .lesson_info .lesson .swiper-button-next:hover {background-size: 34px auto;border-color: #043a3c;z-index: 11;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-disabled {border-color: #d3d3d3;z-index: 9;opacity: .1;}
+
+.lessonnav .swiper-button-prev:active {background-color: #00baff;background-size: 32px auto;}
+.lessonnav .swiper-button-next:active {background-color: #00baff;background-size: 32px auto;}
+.lessonwrap .lesson_menu:active {background-color: #00599a;background-size: 32px auto;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-prev:active {background: url("../../../static/images/bg_prev_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-next:active {background: url("../../../static/images/bg_next_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-prev:active {background: url("../../../static/images/bg_prev_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-next:active {background: url("../../../static/images/bg_next_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}

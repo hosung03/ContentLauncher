@@ -1,0 +1,30 @@
+{
+    "threminactlist":[
+        {
+            "id": 13,                  // activity idx (로컬DB ext_act_idx) 
+            "name": "Feelings",        // activity 이름 (로컬DB ext_act_nm)
+            "thumbnail": "https://attach.alab.edu.vn/upload/LEARNING/SPECIAL_ACTIVITY/FILE202004132112060611.png", // activity 썸네일 (로컬DB ext_img_http)
+            "type": "B61001",          // activity Lower/Upper (로컬DB spec_activ_code)
+            "order": 2,                // activity 순서 (로컬DB spec_activ_order)
+            "book": {
+                "id": 10000013,                         // Book 아이디
+                "viewMode": 2,                          // Book viewMode
+                "key": 2647,                            // Book key
+                "path": "/content/2647",                // Boook path
+            }
+        },
+        {
+            "id": 14,                  // activity idx (로컬DB ext_act_idx) 
+            "name": "Around the World",        // activity 이름 (로컬DB ext_act_nm)
+            "thumbnail": "https://attach.alab.edu.vn/upload/LEARNING/SPECIAL_ACTIVITY/FILE202004132112061571.png", // activity 썸네일 (로컬DB ext_img_http)
+            "type": "B61002",          // activity Lower/Upper (로컬DB spec_activ_code)
+            "order": 3,                // activity 순서 (로컬DB spec_activ_order)
+            "book": {
+                "id": 10000014,                         // Book 아이디
+                "viewMode": 2,                          // Book viewMode
+                "key": 2648,                            // Book key
+                "path": "/content/2648",                // Boook path
+            }
+        },
+    ]
+}

@@ -1,0 +1,42 @@
+{
+	"classlist": [
+        {
+            "study": {
+                "orderSeq": 0,
+                "endDate": "20201001",
+                "startDate": "20200520"
+            },
+            "product": {
+                "period": 134,
+                "curriculumImage": "https://attach.fel40.com/upload/2020/02/24/FILE202002241025391701.jpg",
+                "name": "Basic Level 2(R)",
+                "id": 905,
+                "curriculumId": 13113,
+                "curriculumColor": "black"
+            },
+            "memberCount": 0,
+            "name": "유닛테스트용",
+            "id": 322,
+            "description": ""
+        }, 
+        {
+            "study": {
+                "orderSeq": 20,
+                "endDate": "20250603",
+                "startDate": "20200603"
+            },
+            "product": {
+                "period": 1826,
+                "curriculumImage": "https://attach.fel40.com/2020/06/03/FILE202006031144277041.jpg",
+                "name": "Starter Level 1(R)",
+                "id": 1119,
+                "curriculumId": 13873,
+                "curriculumColor": "white"
+            },
+            "memberCount": 31,
+            "name": "Starter Class 1",
+            "id": 364,
+            "description": ""
+        } 
+    ]
+}

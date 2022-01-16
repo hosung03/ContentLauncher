@@ -1,0 +1,514 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 1280px;
+  height: 800px;
+}
+
+div, button {
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+.layoutWrapper{
+  width: 1280px;
+  height:800px;
+  position:absolute;
+}
+
+/************************************************************
+  CUSTOM
+***********************************************************/
+/*  런처사이즈 조절에 따라 가운데 정렬 시작  */
+/*  필요하다면 세로 정렬도 필요 */
+body.electronRatioBody {
+  width: 100%;
+  height: 100%;
+  background:#000;
+  text-align: center;
+  overflow: hidden;
+}
+body.electronRatioBody .appRoot {
+  width: 1280px;
+  height: 800px;
+  display: inline-block;
+  text-align: initial;
+}
+body.electronRatioBody .layoutWrapper{
+  width: 1280px;
+  height:800px;
+  position:absolute;
+  background-color: white;
+}
+/*  런처사이즈 조절에 따라 가운데 정렬 종료 */
+
+.contentViewIFrame {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 800px;
+}
+
+.contentToolContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  z-index: 150;
+}
+
+.contentToolWrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dialogWrapper, .spinnerWrapper{width: 1280px;height:800px;position:absolute;top:0px;left:0px;z-index: 99999999;}
+
+// 퍼블에서 적용된 것 overwrite
+#pageMask {display:block;width: 1280px; height:800px;}
+#pageMask_group_student {display:block;width: 1280px; height:800px;}
+.popupwrap {display: block;}
+.t-tool-left, .t-tool-right {z-index: 101;}
+#commonwrap {position: absolute;top: 0px; left: 0px;}
+#pageMaskResultList {position:absolute;z-index:10001;display:none;left:1;top:0;background: rgba(0, 0, 0, 0.01);width: 100%;height: 100%}
+#resultListCommonwrap {width: 1280px;height: 800px;position: relative;overflow: hidden;background:url("../static/images/bg_common.png") repeat 0 0;}
+#resultDetailCommonwrap {width: 1280px;height: 800px;position: absolute;top: 0px; left: 0px;overflow: hidden;background:url("../static/images/bg_common.png") repeat 0 0;}
+.timer_wrap.step2.caution .clock ul li {color: #ff0000;}
+
+#lockMask {position:absolute;display:block;left:0;top:0;background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%}
+
+//css에서 commonwrap bgnew에 적용된 설정을 resultListCommonwrap에 적용
+// #resultListCommonwrap {background:url("../static/images/bg_common_new.jpg") repeat 0 0;}
+// #resultListCommonwrap .stulistwrap {background: none;width: 100%;border-radius: 0;box-sizing: border-box;}
+// #resultListCommonwrap .stulistwrap .count {margin-bottom: 34px;}
+
+// #resultListCommonwrap .mov_list li, #resultListCommonwrap .sound_list li, #resultListCommonwrap .image_list li {width: 192px;margin: 0 43px 20px 0;}
+// #resultListCommonwrap .mov_list li span b, #resultListCommonwrap .sound_list li span b, #resultListCommonwrap .image_list li span b {font-size: 22px;}
+
+// #resultListCommonwrap .sound_list li {background-image: url("../static/images/bg_box.png");}
+// #resultListCommonwrap .sound_list li p {height: 89px;margin-bottom: 10px;text-align: center;}
+// #resultListCommonwrap .sound_list li p img {display: inline;}
+// #resultListCommonwrap .sound_list .bar {top: 110px;background-color: #051021;}
+// #resultListCommonwrap .sound_list .status {background-color: #00d8ff;}
+
+// #resultListCommonwrap .mov_list li p {height: 120px;border-radius: 0;position: relative;}
+// #resultListCommonwrap .mov_list li p img {display: block;position: absolute;top: 50%;left: 0;transform: translateY(-50%);width: 100%;}
+// #resultListCommonwrap .mov_list li em {top: 90px;}
+
+#resultListCommonwrap .sound_list .btn, #resultListCommonwrap .mov_list .btn {position: absolute;top: calc(120px / 2);left: 50%;transform: translate(-50%,-50%);width: 48px;height: 48px;}
+#resultListCommonwrap .sound_list .btn.play, #resultListCommonwrap .mov_list .btn.play {background: url("../static/images/ic_sound_play2.png") no-repeat 0 0;}
+#resultListCommonwrap .sound_list .btn.play:hover, #resultListCommonwrap .mov_list .btn.play:hover {background-image: url("../static/images/ic_sound_play2_sel.png");}
+#resultListCommonwrap .sound_list .btn.play:active, #resultListCommonwrap .sound_list .btn.play.select, #resultListCommonwrap .mov_list .btn.play:active, #resultListCommonwrap .mov_list .btn.play.select {background-image: url("../static/images/ic_sound_play2_sel.png");}
+#resultListCommonwrap .sound_list .btn.pause, #resultListCommonwrap .mov_list .btn.pause {background: url("../static/images/ic_sound_pause2.png") no-repeat 0 0;}
+#resultListCommonwrap .sound_list .btn.pause:hover, #resultListCommonwrap .mov_list .btn.pause:hover {background-image: url("../static/images/ic_sound_pause2_sel.png");}
+#resultListCommonwrap .sound_list .btn.pause:active, #resultListCommonwrap .sound_list .btn.play.select, #resultListCommonwrap .mov_list .btn.pause:active, #resultListCommonwrap .mov_list .btn.play.select {background-image: url("../static/images/ic_sound_pause2_sel.png");}
+#resultListCommonwrap .sound_list li p.upimg {padding: 0;width: 192px;height: 120px;text-align: center;}
+#resultListCommonwrap .sound_list li p.upimg img {display: inline;max-width: 192px;max-height: 120px;}
+
+#resultListCommonwrap .goback {background-image: url("../static/images/navi/back_new2.png");width: 92px;height: 81px;background-size: 100% 100%;bottom: 8px;right: 0;}
+#resultListCommonwrap .goback:hover {background-image: url("../static/images/navi/back_new2_foc.png");}
+#resultListCommonwrap .goback:active, #resultListCommonwrap .goback.select {background-image: url("../static/images/navi/back_new2_sel.png");}
+
+#resultListCommonwrap .stamp {background-image: url("../static/images/navi/stamp.png");width: 92px;height: 81px;background-size: 100% 100%;}
+#resultListCommonwrap .stamp:hover {background-image: url("../static/images/navi/stamp_foc.png");}
+#resultListCommonwrap .stamp:active, #resultListCommonwrap .stamp.select {background-image: url("../static/images/navi/stamp_sel.png");}
+
+
+// 버튼 select 임의 수정
+.lessonnav .swiper-button-prev:active {background-color: #00baff;background-size: 32px auto;}
+.lessonnav .swiper-button-next:active {background-color: #00baff;background-size: 32px auto;}
+.lessonwrap .lesson_menu:active {background-color: #00599a;background-size: 32px auto;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-prev:active {background: url("../static/images/bg_prev_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .step .swiper-button-next:active {background: url("../static/images/bg_next_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-prev:active {background: url("../static/images/bg_prev_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+.lessonwrap .lessonunit .lesson_info .lesson .swiper-button-next:active {background: url("../static/images/bg_next_sel.png") no-repeat 50% 50% #00baff;background-size: 34px auto;border-color: #00baff;}
+
+
+// Topic 선택 영역 관련 처리
+
+// 선택 영역 확장으로 아이콘의 상태를 class로 제어하기 위한 처리
+.topic strong em.hov {background-image: url("../static/images/ic_topic_foc.png");}
+
+// Poll 최다 득표 숫자 텍스트를 검정색으로 강제 변경
+.poll_type .poll_result p.win em {color: #000;}
+
+// add pointer-event
+.stamp_list_new:after {pointer-events: none;}
+
+// crop 학생 결과 하단
+.library.solo.open {transform: translate3d(0, -102px, 0);transition-duration: .5s;}
+.library.solo {transform: translate3d(0, 5px, 0);transition-duration: .5s;}
+.library.solo dt b {background: url("../static/images/ic_lib_open.png") no-repeat 0 0;}
+.library.solo dt b.select {background-image: url("../static/images/ic_lib_open_foc.png");}
+.library.solo.open dt b {background: url("../static/images/ic_lib_close.png") no-repeat 0 0;}
+.library.solo.open dt b.select {background-image: url("../static/images/ic_lib_close_foc.png");}
+
+.board-menu:after {pointer-events: none;}
+
+// crop 버튼과 결과 목록 버튼 사이에 공백 추가
+.board-tool li span.sturesult {margin-left: 2px;}
+
+// 티칭툴 버튼 위치 조절
+//.t-tool-dt {top: 92px;}
+
+// ideation 글자 잘림 처리
+.brainstormin_wrap .intext .textarea.focus {word-wrap: break-word}
+
+.library_pen_btn {display:none;z-index: 150; width: 50px; height: 50px; position: absolute; right: 37px; bottom: 75px; }
+.CustomWrapper {width: 1280px;height: 800px;position: absolute;overflow: hidden;}
+
+.imagenote {background: none #fff;width: 1280px;height: 800px;position: absolute;top: 0;left: 0;transform: translate3d(1280px, 0, 0);transition-duration: .5s;}
+.imagenote.on {transform: translate3d(0, 0, 0);transition-duration: .5s;}
+
+.stamp_list_new_wrap li img.disable {filter: grayscale(100%);}
+
+// class informatino height 고정
+.stu_popup_wrap.inframe {height: 734px;}
+
+.unselectable {
+  -webkit-user-drag: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// .comp_lec input[type=radio] {display: none;}
+// .comp_lec input[type="radio"] + em {background: url(../static/images/ic_chk.png) no-repeat 0 65%; vertical-align: middle;cursor: pointer;padding-left: 44px;font-size: 22px;height: 48px;display: flex;flex-direction: column;justify-content: center;}
+// .comp_lec input[type="radio"]:checked + em {background-image: url(../static/images/ic_chk_on.png);font-weight: bold;font-family: 'NotoKrB', sans-serif;}
+
+
+// 티칭툴 오른쪽에 공간이 조금 보이므로 조절한다.
+.t-tool-left { left: -1px; }
+.t-tool-right { right: -1px; }
+
+
+.debate_student .title, .chatting_student .title { word-wrap: break-word; }
+
+.sound_text { height: 500px !important; }
+.sound_list .bar {display: block;}
+
+
+.stu_popup_wrap .display dd li {width: 290px !important;}
+
+
+// 퍼블과 동일하게 구성하기 위하여 width 수정
+// .image_list {width: 100% !important;}
+// .mov_list {width: 100% !important;}
+
+.audio_container {height: 666px !important;}
+
+// // 공통 결과 화면 사운드 화면 표시를 위한 swipe 버튼 제어 처리
+.sound_person_swiper_btn {position: absolute; top:0px; background: none; margin-left: 106px;}
+.sound_person .stu_text {height: 510px !important}
+.marginBottom_10 {margin-bottom: 10px }
+
+#common_navi_left {
+  left: 0px;
+  position: absolute;
+  display: table;
+  width: auto;
+  top: 310px;
+  height: 150px;
+  // pointer-events: none;
+  -webkit-transition: left 0.5s, right 0.5s;
+  -o-transition: left 0.5s, right 0.5s;
+  transition: left 0.5s, right 0.5s;
+  z-index: 10000;
+}
+
+#common_navi_right {
+  right: 0px;
+  position: absolute;
+  display: table;
+  width: auto;
+  top: 310px;
+  height: 150px;
+  // pointer-events: none;
+  -webkit-transition: left 0.5s, right 0.5s;
+  -o-transition: left 0.5s, right 0.5s;
+  transition: left 0.5s, right 0.5s;
+  z-index: 10000;
+}
+
+#common_navi_left , #common_navi_right {
+  button.left {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -ms-touch-action: none;
+    touch-action: none;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    background-image: url(../static/images/navi/page_left_R.png);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 66px;
+    pointer-events: unset;
+    cursor: pointer;
+  }
+
+  button.right {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    pointer-events: auto;
+    -ms-touch-action: none;
+    touch-action: none;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    background-image: url(../static/images/navi/page_right_R.png);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 66px;
+    pointer-events: unset;
+    cursor: pointer;
+  }
+}
+
+/*190605 dialog*/
+@mixin image-size($path, $width, $height) {
+  background: url($path);
+  background-size: $width $height;
+}
+.popupwrap {
+  .pop_head {
+    height: 79px;
+    line-height: 79px;
+    background: #00baff;
+    text-align: center;
+    font-size: 30px;
+    color: #003739;
+    font-weight: bold;
+
+    &+.pop_msg {
+      padding: 35px 0 45px;
+
+      &>.pop_btn {
+        text-align: center;
+        height: 183px;
+        padding: 15px 0 0;
+
+        &>button {
+          display: inline-block;
+          margin: 0 32px;
+          width: 208px;
+          height: 188px;
+          overflow: hidden;
+          text-indent: -9999px;
+          outline: none;
+          border: 0;
+
+          &.inclass {
+            @include image-size("../static/images/btn_inclass_off.png", 208px, 188px);
+            &:focus {
+              @include image-size("../static/images/btn_inclass_on.png", 208px, 188px);
+            }
+          }
+          &.preclass {
+            @include image-size("../static/images/btn_preclass_off.png", 208px, 188px);
+            &:focus {
+              @include image-size("../static/images/btn_preclass_on.png", 208px, 188px);
+            }
+          }
+        }
+      }
+
+      &>.pop_progress {
+        width: 588px;
+        height: 170px;
+        margin: 0 auto;
+        padding: 28px 0 0;
+        font-size: 22px;
+        color: #003739;
+
+        &>.progress_bar {
+          width: 100%;
+          height: 9px;
+          background: #dcdcdc;
+          border-radius: 4.5px;
+          position: relative;
+          overflow: hidden;
+
+          &>span {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 4.5px 0 0 4.5px;
+            background: #9962ff;
+            text-indent: -9999px;
+            overflow: hidden;
+          }
+        }
+        &>.progress_num {
+          font-size: 17px;
+          color: rgba(0,0,0,0.6);
+          font-weight: bold;
+          text-align: right;
+          padding: 20px 0 5px;
+        }
+      }
+
+      &+.confirm_btn {
+        padding: 2.5px 20px 20px;
+        height: 47px;
+
+        &>.cbtn {
+          margin: 2.5px 6px;
+          box-sizing: content-box;
+          vertical-align:middle;
+        }
+        &>.cbtn:active {
+          margin: 0;
+          padding: 0 6px;
+          height: 47px;
+          background: #0064a7;
+          font-size: 18px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+/* 공통결과화면 영상 전체화면 시 UI 세팅*/
+video::-webkit-media-controls {
+  display:none !important;
+}
+.video_container_full .video_controls_wrap_full {z-index: 2147483647;}
+.cursor_pointer { cursor: pointer !important; }
+.threeM_full { width: 100% !important; }
+
+.full-width { max-width: 100% !important; }
+
+// 동기화 버튼의 disabled 추가
+.classwrap .classlist li .cFunc span.reload.disabled {background-position: -138px 0;}
+
+// bookshelf del disabled
+.booksh_cont .prmlevel_list .swiper-slide div.btn button.del.disabled {background-image: url("../static/images/btn_del_dis.png");}
+.booksh_cont .prmlevel_list .swiper-slide div.btn button.del.disabled:hover {background-image: url("../static/images/btn_del_dis.png");}
+.booksh_cont .prmlevel_list .swiper-slide div.btn button.del.disabled:active, .booksh_cont .prmlevel_list .swiper-slide div.btn button.del.disabled.select {background-image: url("../static/images/btn_del_dis.png");}
+
+
+// 공통 결과 화면 id 표시부분에서 최대한 많이 표시할 수 있도록 수정
+.stu_profile {left: 2px; width: 100px;}
+.stu_profile p {margin-left: 5px;}
+
+.sound_bar_status { background-color: #00aff2 !important; }
+
+.controls .progress .bar .status span b {display: block;width: 10px;height: 10px;background-color: #fff;border-radius: 50%;position: absolute;top: -3px;right: 0;}
+.swp_video .video_controls .progress .bar .status span b {display: block;width: 10px;height: 10px;background-color: #fff;border-radius: 50%;position: absolute;top: -3px;right: 0;}
+
+//
+.stu_popup_title .down.disabled {background: url("../static/images/btn_adown_dis.png") no-repeat 0 0;}
+.stu_popup_title .down.disabled:hover {background-image: url("../static/images/btn_adown_dis.png");}
+.stu_popup_title .down.disabled:active, .stu_popup_title .down.disabled.select {background-image: url("../static/images/btn_adown_dis.png");}
+
+.padding-left-30 { padding-left: 30px;}
+
+.loading-progress-spinner {
+  width: 272px;
+  height: 42px;
+  margin: 0 auto 24px;
+}
+
+.loading_progress_wrapper {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlap-popup {position: absolute;top: 0px; left: 0px;z-index: 1;}
+
+.camera-on { background: transparent !important;}
+
+.pointer-none {pointer-events: none;}
+
+.student-port-next-clickarea {
+  z-index: 10;
+  position: absolute;
+  width: 40px;
+  height: 200px;
+  top: 325px;
+
+  right: 0px;
+}
+
+.student-port-prev-clickarea {
+  z-index: 10;
+  position: absolute;
+  width: 40px;
+  height: 200px;
+  top: 325px;
+
+  left: 0px;
+}
+
+// Portfolio 결과 상세 화면 좌우 이동 버튼에 대한 처리
+.indi_next, .indi_prev {width: 66px;height: 62px;position: absolute;z-index: 10;background: url("../static/images/navi/port_navi.png") no-repeat 0 0;top: 343px;cursor: pointer;}
+.indi_nav_left {left: 0;} .indi_nav_right {right: 0;}  .indi_prev {top: 436px;}
+.indi_prev.indi_nav_left {background-position: 0 -93px;} .indi_next.indi_nav_right {background-position: -65px 0;} .indi_prev.indi_nav_right {background-position: -65px -93px;}
+.indi_prev.disabled, .indi_next.disabled {background-image: url("../static/images/navi/port_navi_dis.png");}
+
+// Video horizontal flip
+.video-h-flip {
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+// 포트폴리오 비디오 상세 화면 표시 방법을 공통 결과화면과 동일하게 맞춘다.
+.portfolio_video_pos {position: absolute;left: 50%;top:50%;transform: translate(-50%, -50%); width: initial !important; height: initial !important;}
+
+// 학생 포트폴리오 음성 녹음 중단 비활성화 상태 처리
+.student_subject .rec_control button.voc_rec.pause.disabled {background-position: -720px 0;}
+
+.sutdnet_portfolio_block { width: 100%; height:100%; position: absolute; top: 0px; z-index: 1; }
+.sutdnet_portfolio_paging_block { width: 100%; height:190px; position: absolute; top: 0px; z-index: 10; }
+
+.input_topictext_wrapper::after, .input_itemtext_wrapper::after { pointer-events: none;}
+
+.media_player_bar_touch_area { width: 100%; height: 25px; margin-top: -10px; position: absolute; }
+
+.subject_title { pointer-events: none !important; word-wrap: break-word; word-break: break-all;}
+
+// 포트폴리오 topic 텍스트 표시 영역 길이 조절 및 단어 줄넘김 처리
+.pww_title {word-wrap: break-word; letter-spacing: -1px;font-weight: 900; padding: 0 10px !important;}
+
+// board close와 Crop Result bar 표시
+.goback.lib {transition-duration: 0.5s;}
+.goback.lib.open {bottom: 230px !important;}
+.goback.lib.basic {bottom: 105px !important;}
+
+// crop result drawing
+.crop_result_drawing {background: none;width: 1280px;height: 800px;position: absolute;top: 0;left: 0;transform: translate3d(1280px, 0, 0);z-index: 1;}
+.crop_result_drawing.on {transform: translate3d(0, 0, 0);}
+
+// library drawing
+.library_drawing {background: none;width: 1280px;height: 800px;position: absolute;top: 0;left: 0;transform: translate3d(1280px, 0, 0);z-index: 1;}
+.library_drawing.on {transform: translate3d(0, 0, 0);}
+
+
+// Pen 툴이 Floating 일때 Crop Result Bar의 위치 제어
+.library.solo.floating {transform: translate3d(0, -5px, 0) !important;}
+.library.solo.open.floating {transform: translate3d(0, -112px, 0) !important;}
