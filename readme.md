@@ -8,7 +8,7 @@ yarn install
 ```
 yarn start 
 
-In browser, 
+and then in browser, 
 https://localhost:8004/?isDvlp=y
 
 ```
